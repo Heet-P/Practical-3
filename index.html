@@ -1,36 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Calculator</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="Calculator">
-            <div class = button-container>
-                <button class="button" onclick="myFunc()">Click Me</button>
-            </div>
-            <div class="counter-box">
-                <span id="counter">0</span>
-            </div>
-        </div>
-        <script>
-            let count = 0;
-            function display() {
-                document.getElementById("counter").innerText = count;
-            }
-            function myFunc() {
-                count++;
-                if(count == 10)
-                {
-                    alert("You have clicked 10 times!");
-                    count = 0;
-                }
-                display();
-            }
-        </script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EXPERIMENT_3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="prank.html" method="get" autocomplete="off">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
 </html>

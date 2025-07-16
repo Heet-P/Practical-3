@@ -1,36 +1,59 @@
-.Calculator {
-    background-color: #f9f;
-    display: grid;
-    justify-items: center;
-    gap: 15px;
-    padding: 1px;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: black;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.button:hover {
-    background-color: #455049;
-}
-
-.counter-box{
-    background-color: blue;
-    color: white;
-    font: 20px;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    padding-top: 25px;
-    
-}
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #043c5a;
+        font-family: 'Fira Code', monospace;
+    }
+    .login-container {
+        background: #FFF8F0;
+        padding: 38px 32px;
+        border-radius: 15px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+        max-width: 350px;
+        width: 100%;
+        border: 1.5px solid black;
+    }
+    .login-container h2 {
+        text-align: center;
+        color: #222;
+        margin-bottom: 28px;
+    }
+    .login-container label {
+        display: block;
+        margin-bottom: 6px;
+        color: #222;
+        font-weight: 500;
+    }
+    .login-container input {
+        width: 90%;
+        padding: 10px 12px 10px 12px;
+        margin-bottom: 18px;
+        border: 1px solid #FFF8F0;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-family: inherit;
+        background: #FFF8F9;
+        color: #222;
+    }
+    .login-container input:focus {
+        outline: 2px solid #222;
+        border-color: #222;
+    }
+    .login-container button {
+        width: 100%;
+        padding: 12px;
+        background: #222;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 1.1rem;
+        cursor:pointer;
+        transition: background 0.2s, color 0.2s;
+        font-weight: 600;
+    }
+    .login-container button:hover {
+        background: #444;
+        color: #fff;
+    }
