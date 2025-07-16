@@ -38,6 +38,9 @@ function validateForm() {
         return false;
     }
 
-    errorMessage.textContent = "";
-    return true;
+    else{
+        alert("Form submitted successfully!");
+        return true;
+    }
+
 }
