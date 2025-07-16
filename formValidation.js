@@ -1,7 +1,6 @@
 function validateForm() {
     const username = document.getElementById("fname").value;
     const password = document.getElementById("password").value;
-    const errorMessage = document.getElementById("error-message");
     const phone = document.getElementById("phone").value;
     const confirmPassword = document.getElementById("confpsd").value;
     const pincode = document.getElementById("pin").value;
