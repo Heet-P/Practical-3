@@ -6,22 +6,24 @@
     <title>Login - EXPERIMENT_3</title>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="formValidation.js"></script>
 </head>
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="prank.html" method="post">
-            <input type = "text" name = "fname" placeholder="First Name" required>
-            <input type = "text" name = "lname" placeholder="Last Name" required>
-            <input type = "password" name = "psd" placeholder="Password" required>
-            <input type = "password" name = "confpsd" placeholder="Password" required>
-            <input type = "email" name = "email" placeholder="email" required>
-            <input type = "text" name = "gender" placeholder="Gender" required>
-            <input type = "text" name = "country" placeholder="Country" required>
-            <input type = "text" name = "state" placeholder="State" required>
-            <input type = "text" name = "city" placeholder="City" required>
-            <input type = "text" name = "pincode" placeholder="Pincode" required>
-            <input type = "text" name = "phone" placeholder="Phone Number" required>
+        <form name = "baby_Form" action="prank.html" method="post" onclick="validateForm()">
+            <input type = "text" name = "fname" placeholder="First Name" required><!-- D -->
+            <input type = "text" name = "lname" placeholder="Last Name" required><!-- D -->
+            <input type = "password" name = "psd" placeholder="Password" required><!-- D -->
+            <input type = "password" name = "confpsd" placeholder="Password" required><!-- D -->
+            <input type = "email" name = "email" placeholder="email" required><!-- D -->
+            <input type = "text" name = "gender" placeholder="Gender" required><!-- D -->
+            <input type = "text" name = "country" placeholder="Country" required> <!-- D -->
+            <input type = "text" name = "state" placeholder="State" required><!-- D -->
+            <input type = "text" name = "city" placeholder="City" required><!-- D -->
+            <input type = "text" name = "pin" placeholder="Pincode" required><!-- D -->
+            <input type = "text" name = "phone" placeholder="Phone Number" required> <!-- D -->
+            <input type="submit" value="Submit">
         </form>
     </div>
 </body>
